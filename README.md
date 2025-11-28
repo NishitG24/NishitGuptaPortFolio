@@ -38,8 +38,3 @@ npm run dev
 ```bash
 npm run build
 ```
-
-## Email Configuration
-The contact form sends emails to: **nishitautomationtest@gmail.com**
-
-Make sure to set `GMAIL_APP_PASSWORD` environment variable with your Gmail app password.
