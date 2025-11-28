@@ -365,6 +365,49 @@ html {
     font-weight: bold;
 }
 
+.projects-section {
+    background: white;
+    padding: 4rem 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    animation: fadeIn 0.6s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.project-company {
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    color: var(--gray);
+    line-height: 1.8;
+}
+
 .achievements-section {
     background: var(--light);
     padding: 4rem 0;
@@ -612,7 +655,8 @@ html {
     
     .books-grid,
     .skills-grid,
-    .achievements-grid {
+    .achievements-grid,
+    .projects-grid {
         grid-template-columns: 1fr;
     }
     

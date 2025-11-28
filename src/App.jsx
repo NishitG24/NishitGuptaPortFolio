@@ -40,6 +40,7 @@ function App() {
             <li><a href="#about" className="nav-link">About</a></li>
             <li><a href="#skills" className="nav-link">Skills</a></li>
             <li><a href="#experience" className="nav-link">Experience</a></li>
+            <li><a href="#projects" className="nav-link">Projects</a></li>
             <li><a href="#achievements" className="nav-link">Awards</a></li>
             <li><a href="#books" className="nav-link">Books</a></li>
             <li><a href="#contact" className="nav-link">Contact</a></li>
@@ -125,27 +126,28 @@ function App() {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>Senior SDET</h3>
-                <p className="timeline-meta">Enterprise Software Company</p>
+                <h3>Test Lead</h3>
+                <p className="timeline-meta">Wipro</p>
                 <ul className="timeline-list">
-                  <li>Led test automation initiatives using Selenium, Playwright, and Cypress</li>
-                  <li>Architected CI/CD pipelines with GitHub Actions and TeamCity</li>
-                  <li>Implemented BDD frameworks using Cucumber and SpecFlow</li>
+                  <li>Enhanced Web & API automation frameworks using Katalon Studio.</li>
+                  <li>Architected CI/CD pipelines with GitHub Actions</li>
+                  <li> Performed integration, system, and acceptance testing</li>
                   <li>Mentored junior team members on automation best practices</li>
-                  <li>Reduced testing time by 60% through automation framework optimization</li>
+                  <li>Improved test coverage using prompt engineering techniques</li>
                 </ul>
               </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>SDET - Test Automation Engineer</h3>
+                <h3>Senior Test Engineer</h3>
                 <p className="timeline-meta">HCL Technologies</p>
                 <ul className="timeline-list">
-                  <li>Developed automated test suites using Katalon Studio and Robot Framework</li>
+                  <li>Built automation using NUnit, SpecFlow, Robot Framework</li>
                   <li>Performed API testing with REST Assured and Postman</li>
-                  <li>Integrated automated tests with Bitbucket and Octopus deployment pipelines</li>
-                  <li>Collaborated with cross-functional teams for quality delivery</li>
+                  <li>Automated Web and API test cases using C# and Python.</li>
+                  <li>Participated in Scrum, sprint planning, and test design.</li>
+                  <li>Increased defect detection rates with comprehensive regression cycles.</li>
                   <li>Awarded Process Champion for process improvement initiatives</li>
                 </ul>
               </div>
@@ -153,15 +155,43 @@ function App() {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
-                <h3>QA Automation Engineer</h3>
-                <p className="timeline-meta">Software Development Projects</p>
+                <h3>Consultant</h3>
+                <p className="timeline-meta">Capgemini</p>
                 <ul className="timeline-list">
-                  <li>Created automation frameworks from scratch using Java and C#</li>
-                  <li>Implemented mobile testing solutions with Appium</li>
-                  <li>Performed database testing with MySQL and MongoDB</li>
-                  <li>Developed custom automation tools earning Innovation Award</li>
+                  <li>Built large-scale UI & API automation frameworks using JavaScript, Java, C#.</li>
+                  <li>Automated CRM Dynamics workflows using ReactJS and NodeJS</li>
+                  <li>Designed and executed regression, smoke, and system tests.</li>
+                  <li>Managed and optimized 1000+ automation scripts.</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" className="projects-section">
+        <div className="container">
+          <h2 className="section-title">Key Projects</h2>
+          <div className="projects-grid">
+            <div className="project-card">
+              <h3>GPD Medicare Acquisition</h3>
+              <p className="project-company">Wipro</p>
+              <p className="project-description">Designed and implemented a scalable automation framework ensuring CMS compliance, integrated with CI/CD pipelines, and improved Medicare data processing reliability.</p>
+            </div>
+            <div className="project-card">
+              <h3>COMOS Mobile Solution</h3>
+              <p className="project-company">HCL Technologies</p>
+              <p className="project-description">Automated acceptance testing for Siemens COMOS web version using C# and Robot Framework, reducing manual testing effort and accelerating release cycles.</p>
+            </div>
+            <div className="project-card">
+              <h3>Linux Patch Automation</h3>
+              <p className="project-company">Capgemini</p>
+              <p className="project-description">Developed automation for Jenkins CI/CD integration across multiple operating systems, ensuring seamless deployment and reducing environment-related defects.</p>
+            </div>
+            <div className="project-card">
+              <h3>CRM Dynamics</h3>
+              <p className="project-company">Capgemini</p>
+              <p className="project-description">Automated CRM workflows using JavaScript, ReactJS, and API integrations, enhancing CRM efficiency and enabling faster client onboarding.</p>
             </div>
           </div>
         </div>
@@ -195,9 +225,7 @@ function App() {
               </ul>
             </div>
           </div>
-          <div className="resume-download">
-            <a href="/resume" className="btn btn-primary" download>Download Full Resume</a>
-          </div>
+
         </div>
       </section>
 
