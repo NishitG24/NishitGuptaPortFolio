@@ -4,6 +4,7 @@ function App() {
   const [books, setBooks] = useState([]);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [formMessage, setFormMessage] = useState({ text: '', type: '' });
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     fetch('/api/books')
@@ -35,15 +36,20 @@ function App() {
       <nav className="navbar">
         <div className="nav-container">
           <div className="logo">Nishit Gupta</div>
-          <ul className="nav-menu">
-            <li><a href="#home" className="nav-link">Home</a></li>
-            <li><a href="#about" className="nav-link">About</a></li>
-            <li><a href="#skills" className="nav-link">Skills</a></li>
-            <li><a href="#experience" className="nav-link">Experience</a></li>
-            <li><a href="#projects" className="nav-link">Projects</a></li>
-            <li><a href="#achievements" className="nav-link">Awards</a></li>
-            <li><a href="#books" className="nav-link">Books</a></li>
-            <li><a href="#contact" className="nav-link">Contact</a></li>
+          <button className="mobile-menu-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
+            <li><a href="#home" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</a></li>
+            <li><a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</a></li>
+            <li><a href="#skills" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Skills</a></li>
+            <li><a href="#experience" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Experience</a></li>
+            <li><a href="#projects" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Projects</a></li>
+            <li><a href="#achievements" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Awards</a></li>
+            <li><a href="#books" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Books</a></li>
+            <li><a href="#contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -225,7 +231,9 @@ function App() {
               </ul>
             </div>
           </div>
-
+          <div className="resume-download">
+            <a href="/resume" className="btn btn-primary" download>Download Resume</a>
+          </div>
         </div>
       </section>
 
@@ -300,6 +308,7 @@ function App() {
       </section>
 
       <footer className="footer">
+        <p>&copy; 2024 Nishit Gupta. All rights reserved.</p>
       </footer>
     </>
   );
