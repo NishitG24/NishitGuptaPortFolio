@@ -86,10 +86,13 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  if (req.url === '/resume' && req.method === 'GET') {
-    const resumePath = path.join(__dirname, 'data', 'Combined_Profile.pdf');
+  if (req.url === '/api/resume' && req.method === 'GET') {
+    const resumePath = path.join(__dirname, 'data', 'Nishit_Gupta_SDET_Resume (1).pdf');
     const data = fs.readFileSync(resumePath);
-    res.writeHead(200, { 'Content-Type': 'application/pdf', 'Content-Disposition': 'attachment; filename="Resume.pdf"' });
+    res.writeHead(200, { 
+      'Content-Type': 'application/pdf', 
+      'Content-Disposition': 'attachment; filename="Nishit_Gupta_SDET_Resume.pdf"'
+    });
     res.end(data);
     return;
   }

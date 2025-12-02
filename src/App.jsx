@@ -62,6 +62,7 @@ function App() {
           <div className="hero-cta">
             <a href="#about" className="btn btn-primary">About Me</a>
             <a href="#contact" className="btn btn-secondary">Get In Touch</a>
+            <a href="/api/resume" className="btn btn-primary" download>Download Resume</a>
           </div>
         </div>
         <div className="hero-bg"></div>
@@ -230,9 +231,6 @@ function App() {
                 <li>Azure DevOps Continuous Testing</li>
               </ul>
             </div>
-          </div>
-          <div className="resume-download">
-            <a href="/resume" className="btn btn-primary" download>Download Resume</a>
           </div>
         </div>
       </section>
