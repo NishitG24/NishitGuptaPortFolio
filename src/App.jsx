@@ -306,7 +306,7 @@ function App() {
       </section>
 
       <footer className="footer">
-        <p>&copy; 2024 Nishit Gupta. All rights reserved.</p>
+        <p>&copy; 2025 Nishit Gupta. All rights reserved.</p>
       </footer>
     </>
   );
